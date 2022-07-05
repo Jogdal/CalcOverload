@@ -33,10 +33,10 @@ namespace CalculatorApp
         }
 
 
-        static double operandSubtraction(double numberOne, double numberTwo)
+        public static double OperandSubtraction(double numberOne, double numberTwo)
         { return numberOne - numberTwo; }
 
-        static double operandSubtraction(double[] numbers)
+        public static double OperandSubtraction(double[] numbers)
         {
             double summa = 0;
             double firstNumber = numbers[0] + numbers[0];
@@ -52,10 +52,10 @@ namespace CalculatorApp
 
 
 
-        static double operandMultiplication(double numberOne, double numberTwo)
+        public static double OperandMultiplication(double numberOne, double numberTwo)
         { return numberOne * numberTwo; }
 
-        static double operandDivision(double numberOne, double numberTwo)
+        public static double OperandDivision(double numberOne, double numberTwo)
         {
             if (numberOne == 0)
             {
@@ -131,20 +131,20 @@ namespace CalculatorApp
 
                     case 2: { if (nrInputs == 2)
                               {
-                                 result = operandSubtraction(numberOne, numberTwo);
+                                 result = OperandSubtraction(numberOne, numberTwo);
                                 Console.WriteLine("Enkel subtraction used!");
                                 break;
                             }
                             else
                               {
-                                 result = operandSubtraction(doubleNumbers);
+                                 result = OperandSubtraction(doubleNumbers);
                                  Console.WriteLine("Resltat flera subtractioner : " + result);
                                 break;
                               }
                             }
 
-                    case 3: { result = operandMultiplication(numberOne, numberTwo); break; }
-                    case 4: { result = operandDivision(numberOne, numberTwo); break; }
+                    case 3: { result = OperandMultiplication(numberOne, numberTwo); break; }
+                    case 4: { result = OperandDivision(numberOne, numberTwo); break; }
                 }
 
                 Console.WriteLine();
