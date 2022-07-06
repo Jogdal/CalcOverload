@@ -63,7 +63,6 @@ namespace CalculatorApp
             }
             if (numberTwo == 0)
             {
-
                 // Skall returnera infinity värde
                 Console.WriteLine("Division med 0 ger ett oändligt stort tal!");
                 Console.WriteLine("Press <Enter> to continue !");
